@@ -241,7 +241,7 @@
   -webkit-box-shadow: 0 0 5px;
           box-shadow: 0 0 5px;
   position: absolute;
-  left: 10px;
+  left: -18px;
   right: 0;
   top: 100%;
   -webkit-box-sizing: border-box;
@@ -290,6 +290,9 @@
 }
 
 .filter__filter-link-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
   font-family: 'Lato';
   font-style: normal;
@@ -297,14 +300,15 @@
   font-size: 14px;
   line-height: 17px;
   color: #EF5B70;
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin: 0 0 18px 0;
   padding: 11px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 1px solid #6F6E6E;
+  border-bottom: 1px solid #9f9f9f73;
   position: relative;
+  margin-left: 17px;
 }
 
 .filter__filter-link-span::before {
@@ -338,6 +342,8 @@
   font-size: 14px;
   line-height: 17px;
   color: #EF5B70;
+  list-style-type: none;
+  margin: 0;
 }
 
 .filter__filter-li {
@@ -1321,6 +1327,56 @@
   border: 2px solid #fff;
 }
 
+.submit__content__catalog {
+  border: 1px solid #EBEBEB;
+  margin-bottom: 96.5px;
+  max-width: 285px;
+}
+
+.namber-catalog a {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6F6E6E;
+}
+
+.namber-catalog a:hover {
+  color: #EF5B70;
+}
+
+.namber-catalog a {
+  text-decoration: none;
+}
+
+.namber-catalog {
+  list-style-type: none;
+}
+
+.submit__namber-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 12px 10px;
+}
+
+.scroll__right {
+  background-image: url(img/img_index/scroll__right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+}
+
+.scroll__left {
+  background-image: url(img/img_index/scroll__left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+}
+
 @media (max-width: 1024px) {
   .header__top-picture {
     display: none;
@@ -1456,4 +1512,4 @@
     margin: 0;
   }
 }
-/*# sourceMappingURL=style_index.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -190,7 +190,7 @@
     #FFFFFF;
     box-shadow: 0 0 5px;
     position: absolute;
-    left: 10px;
+    left: -18px;
     right: 0;
     top: 100%;
     box-sizing: border-box;
@@ -227,6 +227,7 @@
     visibility: visible;
 }
 .filter__filter-link-span{
+    display: flex;
     text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
@@ -234,14 +235,14 @@
     font-size: 14px;
     line-height: 17px;
     color: #EF5B70;
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: 0 0 18px 0;
     padding: 11px;
     box-sizing: border-box;
-    border-bottom: 1px solid #6F6E6E;
+    border-bottom: 1px solid #9f9f9f73;
     position: relative;
-    
+    margin-left: 17px;
 }
 .filter__filter-link-span::before {
     content: "";
@@ -270,6 +271,8 @@
     font-size: 14px;
     line-height: 17px;
     color: #EF5B70;
+    list-style-type: none;
+    margin: 0;
 }
 .filter__filter-li {
     padding: 5.5px 0 5.5px 55px;
@@ -1089,6 +1092,48 @@
     border: 2px solid #fff;
   }
   // конец вспывающего меню поиска ---------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------------------------------------------------
+  // нумерация кнопки сабмит
+.submit__content__catalog {
+    border: 1px solid #EBEBEB;
+    margin-bottom: 96.5px;
+    max-width: 285px;
+}
+.namber-catalog a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6F6E6E;
+    // list-style-type: none;
+}
+.namber-catalog a:hover {
+    color: #EF5B70;
+}
+.namber-catalog a{
+    text-decoration: none;
+}
+.namber-catalog {
+    list-style-type: none;
+}
+.submit__namber-catalog {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 10px;
+}
+.scroll__right{
+    background-image: url(img/img_index/scroll__right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+}
+.scroll__left{
+    background-image: url(img/img_index/scroll__left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+}
 @media (max-width: 1024px){
     .header__top-picture{
        display: none;
