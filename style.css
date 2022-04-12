@@ -88,7 +88,6 @@
 .catalog__header__top-backgraund {
   background: #F8F3F4;
   padding: 60px 0;
-  margin-bottom: 51px;
 }
 
 .heder__top {
@@ -226,6 +225,7 @@
       justify-content: space-around;
   margin: 0;
   padding-bottom: 64px;
+  margin-top: 51px;
 }
 
 .catalog__filter-nav {
@@ -1103,10 +1103,12 @@
 
 .input-email {
   background: #E1E1E1;
-  padding: 19px 134px 19px 22px;
+  padding: 19px 22px 19px 22px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border: none;
+  width: 296px;
+  margin-left: 8px;
 }
 
 .subscribe--email {
@@ -1128,6 +1130,7 @@
   border-bottom-right-radius: 20px;
   padding: 19px 20px 19px 21px;
   border: none;
+  margin-right: 8px;
 }
 
 .footer__bottom-all {
@@ -1377,12 +1380,316 @@
   width: 10px;
 }
 
+.product__carousel {
+  background-color: #F7F7F7;
+  height: 777px;
+  background-image: url(img/img_index/product-mid-girl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.arrow-left {
+  width: 47px;
+  height: 47px;
+  background-color: #2A2A2A26;
+  position: relative;
+  margin: 0;
+  top: 42%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrow-right {
+  width: 47px;
+  height: 47px;
+  background-color: #2A2A2A26;
+  top: 42%;
+  position: relative;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrow-left svg {
+  fill: black;
+}
+
+.arrow-right svg {
+  fill: black;
+}
+
+.arrow-left:hover svg {
+  fill: #F16D7F;
+}
+
+.arrow-right:hover svg {
+  fill: #F16D7F;
+}
+
+.card__info-moschino {
+  border: 1px solid #EAEAEA;
+  margin-bottom: 130px;
+  position: relative;
+  z-index: 8;
+  background-color: #FFFFFF;
+  margin-top: -55px;
+}
+
+.card__info-moschino h3 {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  padding-bottom: 12px;
+  padding-top: 64px;
+}
+
+.hr-red__card__info-moschino {
+  width: 63px;
+  size: 3px;
+  color: #F16D7F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 6px;
+  background-color: #F16D7F;
+}
+
+.card__info-moschino h2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  text-align: center;
+  padding-bottom: 49px;
+  padding-top: 12px;
+}
+
+.txt__card__info-moschino {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  max-width: 555px;
+  padding: 0 10px 32px 10px;
+}
+
+.txt-many__card__info-moschino {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  padding-bottom: 65px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hr-black__card__info-moschino {
+  max-width: 55%;
+  size: 1px;
+  color: #EAEAEA;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 3px;
+  background-color: #EAEAEA;
+  margin-bottom: 65px;
+}
+
+.filter__link-all__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 29% 49px 29%;
+}
+
+.list-trending__product {
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.list-trending-btn-title__product {
+  display: block;
+  width: 100%;
+  margin-right: 42px;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #6F6E6E;
+  background-color: transparent;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.list-trending-btn-title__product svg {
+  fill: #6F6E6E;
+  position: absolute;
+  top: 40%;
+  left: 79%;
+}
+
+.list-trending-btn-title__product:hover {
+  color: #F16D7F;
+}
+
+.list-trending-btn-title__product:hover svg {
+  fill: currentColor;
+}
+
+#switch-trending__product {
+  display: none;
+}
+
+#switch-trending__product:checked ~ .list-trending-wrp__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-trending-wrp__product {
+  width: 155px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px 0 0 0;
+  padding: 9.5px 9.5px 9.5px 31px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  z-index: 10;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.list-trending-item__product {
+  display: none;
+}
+
+.list-trending-item__product:nth-child(1):checked ~ .list-trending-item-title__product:nth-child(2)::before {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Green_tick.svg/600px-Green_tick.svg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.list-trending-item-title__product {
+  display: block;
+  margin: 0 0 6px 0;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #6F6E6E;
+}
+
+.list-trending-item-title__product:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #EBEBEB;
+  position: absolute;
+  top: 1px;
+  left: -23.5px;
+}
+
+.submit__content-product {
+  width: 211px;
+  border: 1px solid #FF6A6A;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 65px;
+  padding: 13.5px 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.submit__content-product:hover .submit__all-product {
+  color: #FFFFFF;
+}
+
+.submit-product {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FF6A6A;
+  text-decoration: none;
+}
+
+.submit__content-product:hover {
+  background: #F16D7F;
+}
+
+.submit-product:hover {
+  color: #FFFFFF;
+}
+
+.img__add-to-cart__product svg {
+  fill: #FF6A6A;
+  padding-right: 11px;
+}
+
+.capsule__all-product {
+  padding-bottom: 128px;
+}
+
 @media (max-width: 1024px) {
   .header__top-picture {
     display: none;
   }
   .header__top-h1 {
-    margin: 150px 56px;
+    margin: 150px 0 150px 56px;
+    padding-right: 0;
   }
   .header__top-backgraund {
     margin-bottom: 0;
@@ -1399,6 +1706,15 @@
   }
   .capsule__9 {
     display: none;
+  }
+  .card__info-moschino {
+    margin-top: 0;
+  }
+  .capsule__3 {
+    display: none;
+  }
+  .filter__link-all__product {
+    padding: 0 20% 49px 20%;
   }
 }
 
@@ -1445,6 +1761,18 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .footer__middle__subscribe-all {
+    padding: 0;
+  }
+  .header__top-h1 {
+    font-size: 26px;
+    line-height: 15px;
+    margin: 150px 7%;
+    padding: 1% 0 2% 16px;
+  }
+  .filter__link-all__product {
+    padding: 0 5% 49px 5%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1455,7 +1783,7 @@
     margin: 0 16px 32px 16px;
   }
   .assortment__accesories {
-    width: auto;
+    width: 360px;
   }
   .txt-center {
     padding-top: 30%;
@@ -1463,17 +1791,8 @@
   .txt-center-long {
     padding-top: 18%;
   }
-  .footer__middle__subscribe-all {
-    padding: 0;
-  }
   .footer__bottom {
     display: block;
-  }
-  .header__top-h1 {
-    font-size: 26px;
-    line-height: 15px;
-    margin: 150px 47px;
-    padding: 1% 0 2% 16px;
   }
   .footer__bottom_social_network-all {
     padding: 40px 24% 0 24%;
@@ -1510,6 +1829,22 @@
   }
   .menu__all-right {
     margin: 0;
+  }
+  .input-email {
+    padding: 19px 100px 19px 22px;
+  }
+  .filter__link-all__product {
+    padding: 0 3% 49px 3%;
+  }
+  .capsule__all-product {
+    padding-bottom: 64px;
+  }
+  .img__add-to-cart__product svg {
+    padding-right: 0;
+    padding-left: 1%;
+  }
+  .submit-product {
+    padding-right: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
