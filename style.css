@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0 auto;
@@ -5,8 +6,35 @@
           box-sizing: border-box;
 }
 
-.txt__cards-h3 {
+@font-face {
   font-family: 'Lato';
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.txt__cards-h3 {
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16,7 +44,7 @@
 }
 
 .txt__span-red {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -112,7 +140,7 @@
 }
 
 .txt__arrivals {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -128,13 +156,23 @@
 .link__nav-all {
   display: inline;
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #636363;
   font-weight: normal;
+}
+
+.link__nav-all::before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: black;
+}
+
+.link__nav-all:first-child::before {
+  content: "";
 }
 
 .link__nav-all:hover a {
@@ -160,7 +198,7 @@
 }
 
 .header__top-h1 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 700;
   font-size: 37px;
@@ -175,9 +213,9 @@
 
 .txt__span-the-brand {
   max-width: 377px;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   color: #222222;
@@ -230,6 +268,8 @@
 
 .catalog__filter-nav {
   position: relative;
+  margin: 0;
+  margin-left: 28px;
 }
 
 .filter__ul__filter {
@@ -243,7 +283,7 @@
   position: absolute;
   left: -18px;
   right: 0;
-  top: 100%;
+  top: -12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 10;
@@ -262,10 +302,27 @@
 
 .filter__txt__filter svg {
   fill: #6F6E6E;
+  margin-right: 10px;
 }
 
 .filter__txt__filter:hover svg {
   fill: #EF5B70;
+}
+
+.filter__txt__filter-red {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  padding-top: 13px;
+  padding-left: 16px;
+}
+
+.filter__txt__filter-red svg {
+  fill: #EF5B70;
+  margin-left: 11px;
 }
 
 #txt__filter {
@@ -294,7 +351,7 @@
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -326,7 +383,7 @@
 
 .filter__filter-link {
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -336,7 +393,7 @@
 }
 
 .filter__filter-li-span {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -364,7 +421,7 @@
 
 .filter__link {
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -381,7 +438,7 @@
 }
 
 .filter__txt__filter {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -716,6 +773,17 @@
   background-position: center;
 }
 
+.assortment a {
+  text-decoration: none;
+  font-family: 'Lato', 'arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .women {
   background-image: url(img/img_index/assortment__women.svg);
   width: 360px;
@@ -750,8 +818,19 @@
   padding-top: 6%;
 }
 
+.txt-center-long a {
+  text-decoration: none;
+  font-family: 'Lato', 'arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .heading__items {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -761,7 +840,7 @@
 }
 
 .paragraph__heading-items {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -853,7 +932,7 @@
   display: flex;
   margin: auto;
   text-align: center;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -916,7 +995,7 @@
 }
 
 .txt__cards-h4 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -926,7 +1005,7 @@
 }
 
 .txt__cards-p {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -936,7 +1015,7 @@
 }
 
 .txt__cards-price {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -961,7 +1040,7 @@
 }
 
 .submit__all-product {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1019,7 +1098,7 @@
 }
 
 .txt__advantages-h3 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 19.96px;
@@ -1029,7 +1108,7 @@
 }
 
 .txt__advantages-p {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 13.972px;
@@ -1068,7 +1147,7 @@
 }
 
 .footer__middle__txt {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1083,7 +1162,7 @@
 }
 
 .footer__middle-promotion {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   text-align: center;
   color: #222224;
@@ -1107,12 +1186,12 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border: none;
-  width: 296px;
+  width: 256px;
   margin-left: 8px;
 }
 
 .subscribe--email {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1131,6 +1210,7 @@
   padding: 19px 20px 19px 21px;
   border: none;
   margin-right: 8px;
+  width: 101px;
 }
 
 .footer__bottom-all {
@@ -1148,7 +1228,7 @@
 }
 
 .txt__footer__bottom-copyright {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1250,7 +1330,7 @@
   padding: 14.5px 0 6.5px 30px;
   color: #F16D7F;
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1261,7 +1341,7 @@
   padding: 37px 0 6.5px 30px;
   color: #000000;
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1274,7 +1354,7 @@
 
 .burger__menu-link {
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1337,7 +1417,7 @@
 }
 
 .namber-catalog a {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1454,7 +1534,7 @@
 .card__info-moschino h3 {
   margin: 0 auto;
   text-align: center;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1475,10 +1555,11 @@
           box-sizing: border-box;
   height: 6px;
   background-color: #F16D7F;
+  border: none;
 }
 
 .card__info-moschino h2 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1490,7 +1571,7 @@
 }
 
 .txt__card__info-moschino {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1502,7 +1583,7 @@
 }
 
 .txt-many__card__info-moschino {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -1525,6 +1606,7 @@
   height: 3px;
   background-color: #EAEAEA;
   margin-bottom: 65px;
+  border: none;
 }
 
 .filter__link-all__product {
@@ -1555,7 +1637,6 @@
   color: #6F6E6E;
   background-color: transparent;
   text-align: left;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -1578,7 +1659,27 @@
   display: none;
 }
 
+#switch-trending__product-2 {
+  display: none;
+}
+
+#switch-trending__product-3 {
+  display: none;
+}
+
 #switch-trending__product:checked ~ .list-trending-wrp__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#switch-trending__product-2:checked ~ .list-trending-wrp__product-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#switch-trending__product-3:checked ~ .list-trending-wrp__product-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1604,6 +1705,46 @@
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
+.list-trending-wrp__product-2 {
+  width: 155px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px 0 0 0;
+  padding: 9.5px 9.5px 9.5px 31px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 18px;
+  left: -9px;
+  z-index: 10;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.list-trending-wrp__product-3 {
+  width: 155px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px 0 0 0;
+  padding: 9.5px 9.5px 9.5px 31px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  z-index: 10;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
 .list-trending-item__product {
   display: none;
 }
@@ -1618,7 +1759,6 @@
   display: block;
   margin: 0 0 6px 0;
   position: relative;
-  text-transform: uppercase;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1657,7 +1797,7 @@
 }
 
 .submit-product {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1670,8 +1810,12 @@
   background: #F16D7F;
 }
 
-.submit-product:hover {
+.submit__content-product:hover .submit-product {
   color: #FFFFFF;
+}
+
+.submit__content-product:hover svg {
+  fill: #FFFFFF;
 }
 
 .img__add-to-cart__product svg {
@@ -1697,6 +1841,8 @@
 
 .blank__cart-cards {
   display: block;
+  padding-left: 16.5px;
+  padding-right: 16.5px;
 }
 
 .cards {
@@ -1757,7 +1903,7 @@
 }
 
 .cards__info p {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -1767,7 +1913,7 @@
 }
 
 .cards__info-h3 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1789,8 +1935,17 @@
 
 .span__info-namber {
   border: 2px solid #F5F3F3;
-  padding: 2px 17px;
+  padding: 2px 0px;
   margin-left: 25px;
+  width: 22%;
+  height: 33px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  text-align: center;
 }
 
 .cart__batton {
@@ -1813,7 +1968,7 @@
   text-decoration: none;
   margin: 16.5px 40px;
   display: block;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1827,8 +1982,9 @@
 
 .blank__cart-adress {
   position: relative;
-  top: -11em;
-  margin-left: 12%;
+  top: -10em;
+  margin-left: 7%;
+  padding: 0 16.5px;
 }
 
 .cart__adress-box {
@@ -1836,7 +1992,7 @@
 }
 
 .cart__adress-box h4 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1845,20 +2001,20 @@
 }
 
 .box__input {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #222222;
-  width: 360px;
+  width: 100%;
   height: 44px;
   padding-left: 17px;
   margin: 10.5px 0;
 }
 
 .submit-mid {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1871,6 +2027,8 @@
   background-color: transparent;
   border: 1px solid #A4A4A4;
   margin-top: 10.5px;
+  display: block;
+  margin: 0;
 }
 
 .submit-mid:hover {
@@ -1886,6 +2044,7 @@
 .adress-checkout-txt {
   text-align: right;
   padding-right: 34px;
+  padding-left: 34px;
 }
 
 .adress-checkout-txt span {
@@ -1893,7 +2052,7 @@
 }
 
 .adress-checkout-txt-sub {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -1905,7 +2064,7 @@
 }
 
 .adress-checkout-txt-grand {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1930,6 +2089,7 @@
   height: 3px;
   background-color: #EAEAEA;
   margin-bottom: 17px;
+  border: none;
 }
 
 .cart__adress-red-batton {
@@ -1941,7 +2101,7 @@
 
 .cart__adress-red-batton a {
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1964,7 +2124,7 @@
 }
 
 .registration p {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1973,7 +2133,7 @@
 }
 
 .registration h4 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1982,7 +2142,7 @@
 }
 
 .box__input-registration {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1994,7 +2154,7 @@
 }
 
 .submit-mid-registration {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2011,7 +2171,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 0;
-  bottom: none;
+  border: none;
 }
 
 .arrow-1 {
@@ -2063,50 +2223,90 @@
 }
 
 .checkbox__all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 14px 0 35px 0;
 }
 
-.checkbox-male {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
+/* для элемента input c type="radio" */
+.custom-radio {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 13px;
+  color: #000000;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus + label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #FF6A6A;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.radio {
   margin-right: 20px;
-}
-
-.checkbox-male input {
-  margin-right: 10px;
-}
-
-.checkbox-male label {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000000;
-}
-
-.checkbox-femail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-
-.checkbox-femail input {
-  margin-right: 10px;
-}
-
-.checkbox-femail label {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000000;
 }
 
 @-webkit-keyframes arrow-1 {
@@ -2134,7 +2334,7 @@
 }
 
 .loyality h3 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -2143,7 +2343,7 @@
 }
 
 .loyality h4 {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -2171,7 +2371,7 @@
 }
 
 .loyality li p {
-  font-family: 'Lato';
+  font-family: 'Lato', 'arial';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -2223,8 +2423,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: 128.5px;
   }
   .cart__batton {
@@ -2234,9 +2432,30 @@
     max-height: 214px;
     margin-left: 15px;
     width: 360px;
+    margin-top: 17px;
   }
   .adress-checkout-txt-sub {
     margin-top: 0;
+  }
+  .box__input {
+    max-width: 365px;
+  }
+  .list__registration-all {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 836px) {
+  .list__registration-all {
+    display: block;
+  }
+  .txt__arrivals-reqistration {
+    padding-bottom: 0;
+  }
+  .registration {
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -2248,6 +2467,15 @@
   .cart__adress-checkout {
     margin: 0 auto;
     margin-top: 48.5px;
+  }
+  .cart__adress-box form {
+    text-align: center;
+  }
+  .cart__adress-box h4 {
+    margin-left: 10%;
+  }
+  .submit-mid {
+    margin-left: 10%;
   }
 }
 
@@ -2271,9 +2499,6 @@
   }
   .footer__top-all {
     padding: 48px 0;
-  }
-  .header__bottom {
-    padding: 0 16.5px;
   }
   .txt-center {
     padding-top: 43%;
@@ -2313,9 +2538,17 @@
   .cart__batton-clear {
     margin: 0 auto;
   }
+  .checkbox-other {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 660px) {
+  .box__input-registration {
+    width: 100%;
+  }
   .cards {
     max-width: 358px;
   }
@@ -2358,7 +2591,7 @@
     display: block;
   }
   .assortment {
-    margin: 0 16px 32px 16px;
+    margin-bottom: 32px;
   }
   .assortment__accesories {
     width: 360px;
@@ -2384,20 +2617,18 @@
   .filter__filter svg {
     width: 44px;
     height: 31px;
-    padding: 0 0 15px 20px;
+    padding: 0 0 15px 0;
   }
   .catalog__heder__top {
     display: block;
     margin: auto;
-  }
-  .catalog__heder__top {
-    padding-left: 27%;
   }
   .txt__arrivals {
     padding-bottom: 32px;
   }
   .catalog__header__top-backgraund {
     padding-top: 24px;
+    text-align: center;
   }
   .account {
     display: none;
@@ -2430,6 +2661,52 @@
   .catalog__header__top-backgraund-cart {
     padding-top: 50px;
     padding-bottom: 69px;
+  }
+  .cart__adress-box h4 {
+    margin-left: 0;
+  }
+  .submit-mid {
+    margin-left: 0;
+  }
+  .input-email {
+    background: #E1E1E1;
+    padding: 19px 22px 19px 22px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    width: 245px;
+    margin-left: 8px;
+  }
+  .subscribe--email {
+    font-family: 'Lato', 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF6A6A;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 19px 20px 19px 21px;
+    border: none;
+    margin-right: 8px;
+    width: 96px;
+  }
+  .women {
+    margin-right: auto;
+  }
+  .men {
+    margin-right: auto;
+  }
+  .header__top-h1 {
+    margin: 150px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

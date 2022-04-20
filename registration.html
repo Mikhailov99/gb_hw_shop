@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header class="header__background">
@@ -147,14 +149,9 @@
     </header>
     <aside class="catalog__header__top-backgraund catalog__header__top-backgraund-cart">
         <div class="catalog__heder__top container">
-            <p class="txt__arrivals txt__arrivals-cart">REGISTRATION</p>
+            <p class="txt__arrivals txt__arrivals-cart txt__arrivals-reqistration">REGISTRATION</p>
         </div>
     </aside>
-
-
-
-
-
     <section class="list__registration-all container">
         <div class="registration">
             <form action="#">
@@ -162,15 +159,33 @@
                 <input class="box__input-registration input-first" type="text" placeholder="First Name"><br>
                 <input class="box__input-registration input-last" type="text" placeholder="Last Name"><br>
                 <div class="checkbox__all">
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                        <label for="color-1">Male</label>
+                    </div>
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="color-4" name="color" value="yellow">
+                        <label for="color-4">Femail</label>
+                    </div>
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="color-5" name="color" value="green">
+                        <label for="color-5">Other</label>
+                    </div>
+                </div>
+                <!-- <div class="checkbox__all">
                     <div class="checkbox-male">
                         <input type="checkbox" name="male" id="male">
                         <label for="male">Male</label>
                     </div>
                     <div class="checkbox-femail">
                         <input type="checkbox" name="famale" id="famele">
-                        <label for="femail">femail</label>
+                        <label for="famale">Femail</label>
                     </div>
-                </div>
+                    <div class="checkbox-other">
+                        <input type="checkbox" name="other" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div> -->
                 <h4>Login details</h4>
                 <input class="box__input-registration input-email-registration" type="email" placeholder="Email"><br>
                 <input class="box__input-registration input-password" type="password" placeholder="Password"><br>
@@ -178,8 +193,6 @@
                 <button class="submit-mid-registration" type="submit">JOIN NOW<div class="arrow-1"><div></div></div></button>
             </form>
         </div>
-
-
         <div class="loyality">
             <h3>LOYALTY HAS ITS PERKS</h3>
             <h4>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</h4>
@@ -192,11 +205,6 @@
             </u>
         </div>
     </section>
-
-
-
-
-
     <footer class="footer__middle__all-box">
         <footer class="footer__middle container">
             <div class="footer__middle__contact">

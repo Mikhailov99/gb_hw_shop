@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -163,7 +165,7 @@
                         <p>Price: <span class="cards__info-p-span">$300</span></p>
                         <p>Color: Red</p>
                         <p>Size: Xl</p>
-                        <p>Quantity: <span class="span__info-namber">2</span></p></p>
+                        <p>Quantity: <input class="span__info-namber" type="text" placeholder="2"></p>
                     </div>
                 </div>
                 <div class="cards-2 cards">
@@ -176,7 +178,7 @@
                         <p>Price: <span class="cards__info-p-span">$300</span></p>
                         <p>Color: Red</p>
                         <p>Size: Xl</p>
-                        <p>Quantity: <span class="span__info-namber">2</span></p>
+                        <p>Quantity: <input class="span__info-namber" type="text" placeholder="2"></p>
                     </div>
                 </div>
             </div>
@@ -197,17 +199,18 @@
             <div class="cart__adress-box">
                 <h4>SHIPPING ADRESS</h4>
                 <form action="#">
-                    <input class="box__input input-city" type="text" placeholder="Bangladesh"><br>
-                    <input class="box__input input-state" type="text" placeholder="State"><br>
-                    <input class="box__input input-zip" type="text" placeholder="Postcode / Zip"><br>
+                    <input class="box__input input-city" type="text" placeholder="Bangladesh">
+                    <input class="box__input input-state" type="text" placeholder="State">
+                    <input class="box__input input-zip" type="text" placeholder="Postcode / Zip">
                     <button class="submit-mid" type="submit">GET A QUOTE</button>
                 </form>
             </div>
             <div class="cart__adress-checkout">
                 <p class="adress-checkout-txt-sub adress-checkout-txt">SUB TOTAL <span>$900</span></p>
                 <p class="adress-checkout-txt-grand adress-checkout-txt">GRAND TOTAL <span>$900</span></p>
-                <div class="hr-black__cart__adress">
-                </div>
+                <!-- <div class="hr-black__cart__adress">
+                </div> -->
+                <hr class="hr-black__cart__adress">
                 <div class="cart__adress-red-batton">
                     <a href="#">PROCEED TO CHECKOUT</a>
                 </div>
