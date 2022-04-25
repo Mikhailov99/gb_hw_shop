@@ -105,6 +105,9 @@
     justify-content: space-between;
     flex-grow: 1;
 }
+.header__top-picture-tablet {
+    display: none;
+}
 .catalog__heder__top{
     display: flex;
     justify-content: space-between;
@@ -170,8 +173,8 @@
     padding: 1% 0 1% 16px;
     border-left: 12px solid #F16D7F;
     max-height: 115px;
-    margin-top: 27%;
-    padding-right: 99px;
+    margin-top: 290px; //27%
+    // padding-right: 99px;
 }
 .txt__span-the-brand{
     max-width: 377px;
@@ -193,6 +196,7 @@
 }
 .header__bottom {
     margin-bottom: 96px;
+    padding: 0 16px;
 }
 // filter catalog 
 // ----------------------------------------------------------------------------------------------------------------------
@@ -982,6 +986,15 @@
     border: none;
     width: 256px;
     margin-left: 8px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
 }
 .subscribe--email{
     font-family: 'Lato', 'arial';
@@ -1063,7 +1076,6 @@
     display: inline-block;
     float: right;
     box-sizing: border-box;
-    padding-top: 16px;
     padding-right: 16px;
     position: relative;
 }
@@ -2032,16 +2044,10 @@ content: '';
 }
 //----------------------------------------------------------------------------------
 @media (max-width: 1024px){
-    .header__top-picture{
-       display: none;
-    }
-    .header__top-h1{
-        margin: 150px 0 150px 56px;
-        padding-right: 0;
-    }
-    .header__top-backgraund{
-        margin-bottom: 0;
-    }
+    // .header__top-h1{
+    //     margin: 150px 0 150px 56px;
+    //     padding-right: 0;
+    // }
     .catalog__heder__top{
         padding-left: 16px;
         padding-right: 16px;
@@ -2093,21 +2099,30 @@ content: '';
         padding-left: 16px;
         padding-right: 16px;
     }
+    .loyality h3 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .loyality h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .loyality li p{
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
-@media (max-width: 836px){
-    .list__registration-all {
-        display: block;
-    }
-    .txt__arrivals-reqistration {
-        padding-bottom: 0;
-    }
+@media (max-width: 842px){ //836px
     .registration {
-        margin-right: 0;
-        margin-bottom: 40px;
+        margin-right: 22.5px;
     }
     // .box__input-registration {
     //     max-width: 360px;
     // }
+    .header__top-h1{
+        font-size: 26px;
+        line-height: 15px;
+    }
 }
 @media (max-width: 731px){
     .blank__cart-adress{
@@ -2149,9 +2164,6 @@ content: '';
     .footer__top-all{
         padding: 48px 0;
     }
-    // .header__bottom{
-    //     padding: 0 16.5px;
-    // }
     .txt-center{
         padding-top: 43%;
     }
@@ -2173,9 +2185,9 @@ content: '';
         padding: 0;
     }
     .header__top-h1{
-        font-size: 26px;
-        line-height: 15px;
-        margin: 150px 7%;
+        // font-size: 26px;
+        // line-height: 15px;
+        margin: 150px 3%;
         padding: 1% 0 2% 16px;
     }
     .filter__link-all__product {
@@ -2189,6 +2201,12 @@ content: '';
     }
     .checkbox-other {
         display: flex;
+    }
+    .header__top-picture{
+        display: none;
+     }
+    .header__top-picture-tablet {
+        display: block;
     }
 }
 @media (max-width: 660px){
@@ -2230,6 +2248,37 @@ content: '';
     .cart__batton{
         padding-top: 30px;
     }
+    .list__registration-all {
+        display: block;
+    }
+    .txt__arrivals-reqistration {
+        padding-bottom: 0;
+    }
+    .registration {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 534px){
+    .header__top-picture-tablet {
+        display: none;
+    }
+    .header__top-h1 {
+        margin: 150px auto;
+    }
+    .footer__bottom {
+        // display: block;
+        flex-direction: column;
+    }
+    .footer__bottom_social_network-all{
+        padding: 0 24% 40px 24%;
+        order: 1;
+    }
+    .txt__footer__bottom-copyright{
+        text-align: center;
+        order: 2;
+        padding-top: 0;
+    }
 }
 @media (max-width: 425px) {
     .assortment__women-men-kids {
@@ -2253,18 +2302,12 @@ content: '';
     // .footer__middle__subscribe-all {
     //     padding: 0;
     // }
-    .footer__bottom {
-        display: block;
-    }
-    .footer__bottom_social_network-all{
-        padding: 40px 24% 0 24%;
-    }
-    .txt__footer__bottom-copyright{
-        text-align: center; 
-    }
-    .filter__txt__filter{
+    .filter__filter span {
         display: none;
     }
+    // .filter__txt__filter{
+    //     display: none;
+    // } проблема - исчезает кнопка
     .filter__filter svg {
         width: 44px;
         height: 31px;
@@ -2292,7 +2335,7 @@ content: '';
         margin: 0;
     }
     .input-email {
-    padding: 19px 100px 19px 22px;
+        padding: 19px 100px 19px 22px;
     }
     .filter__link-all__product {
         padding: 0 3% 49px 3%;
@@ -2353,7 +2396,25 @@ content: '';
     .men{
         margin-right: auto;
     }
-    .header__top-h1 {
-        margin: 150px auto;
+    .header__bottom{
+        padding: 0;
+    }
+}
+@media (max-width: 400px){
+    .blank__cart-cards{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .blank__cart-adress{
+        padding: 0;
+    }
+    .cart__adress-box h4 {
+        margin-left: 4%;
+    }
+    .submit-mid {
+        margin-left: 4%;
+    }
+    .cards__info {
+        padding-right: 2%;
     }
 }
